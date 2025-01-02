@@ -1,4 +1,4 @@
-import mongoose, { connect } from "mongoose";
+import mongoose from "mongoose";
 
 const connectDB = async () => {
   try {
@@ -7,7 +7,7 @@ const connectDB = async () => {
     );
 
     console.log(
-      `\n MONGODB CONNECT !! DB HOSTE : ${connectionInstance.connection.host}`
+      `\n MONGODB CONNECT SUCCESSFULLY !! DB HOSTE : ${connectionInstance.connection.host}`
     );
   } catch (error) {
     console.log(`Mongo DB connection Failed ${error}`);
